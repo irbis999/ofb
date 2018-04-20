@@ -1,0 +1,14 @@
+include templates/mixins/svg
+
+doctype html
+html(lang="en")
+	head
+		title Bank
+		meta(charset='utf-8')
+		meta(name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0')
+		link(rel='stylesheet' href='/build/styles/app.css')
+	body(data-sprite-path='/build/styles/svg-sprite.svg')
+		svg: +use('сamera')
+		h1 Pug - node template engine
+		img(src='/build/img/svg-sprite/сamera.svg')
+		script(src='/build/js/app.js')

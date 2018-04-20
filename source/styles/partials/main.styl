@@ -1,0 +1,30 @@
+html
+  font-family font-family-main
+body
+  font-size font-size-main
+  color font-color-main
+  line-height line-height-main
+  //background image-url('svg-sprite/сamera.svg')
+.site-container
+  margin 0 auto
+  max-width body-max-width
+  min-width body-min-width
+  @extend .clearfix
+a
+  color font-link-color
+  text-decoration none
+  &:hover
+    text-decoration underline
+  &.__styleless
+    color inherit
+img, iframe, object, embed, video
+  max-width 100%
+.container
+  padding-left container-padding
+  padding-right @padding-left
+  @extend .clearfix
+  &.__relative
+    position relative
+.anti-container
+  margin-left -(container-padding)
+  margin-right @margin-left
