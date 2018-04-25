@@ -1,0 +1,93 @@
+section.i-care
+  margin-bottom 2em
+  .left-col
+    margin-bottom 2em
+    @extend .container
+    .inner
+      padding 2em 2em 3.5em 2em
+      background linear-gradient(to bottom, color-light-grey 0%, color-light-grey 70%, transparent 70%), image-url('main/grey-wave-bg.svg') no-repeat left bottom
+      background-size 100%
+    form
+      margin-bottom 2em
+    .cols
+      @extend .clearfix
+      .col
+        float left
+        box-sizing border-box
+        padding-right 1.5em
+        margin-bottom 1em
+        max-width 200px
+        &:nth-of-type(odd)
+          clear left
+          width 70%
+        &:nth-of-type(even)
+          width 30%
+        a
+          font-size 1.27em
+          font-weight bold
+          color color-blue
+          border-bottom 1.5px solid color-xlight-blue
+          no-repeat 0% 0% / contain
+    .more
+      color color-grey
+      font-size .86em
+      position relative
+      display inline-block
+      border-bottom 1px solid rgba(black, .2)
+      &::after
+        border-bottom none
+        display inline-block
+        content ''
+        width 7px
+        height 12px
+        position absolute
+        margin .3em 0 0 .5em
+        background image-url('svg-sprite/caret-right.svg') no-repeat center center
+        background-size contain
+  .right-col
+    //TODO с фотостока взять фотку широкую под 600 в ширину
+    background top center no-repeat image-url('plugs/couple-mobile.jpg')
+    //background-size auto 190px
+    background-size 100%
+    padding-top 112px
+    margin-bottom 3em
+  @media (min-width medium-up)
+    .left-col
+      float left
+      width 48.5%
+      box-sizing border-box
+      .inner
+        padding 3.33em 3.33em 6em 3.33em
+      form
+        @extend .clearfix
+        margin-bottom .5em
+        input.text
+          float left
+          width 48%
+        button
+          float right
+          width 48%
+          font-size 1.27em
+          padding .5em
+      .large-black
+        margin-bottom .5em
+      .cols
+        margin-bottom .5em
+        .col
+          max-width 210px
+          margin-bottom .8em
+      .more
+        font-size 1em
+        &::after
+          width 10px
+          height 15px
+          margin-top .25em
+    .right-col
+      float right
+      width 48.5%
+      padding-left 2em
+      padding-right calc(2em + 22px)
+      box-sizing border-box
+      padding-top 197px
+      background-image image-url('plugs/couple.jpg')
+      background-size auto auto

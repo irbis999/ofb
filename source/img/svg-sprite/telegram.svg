@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="52px" viewBox="0 0 63 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Telegram_logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="61.2346759%" y1="43.69%" x2="74.7064382%" y2="80.24%" id="linearGradient-1">
+            <stop stop-color="#EFF7FC" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="main-mobile" transform="translate(-46.000000, -4233.000000)" fill-rule="nonzero">
+            <g id="Group-39-Copy-3" transform="translate(10.000000, 4198.000000)">
+                <g id="Telegram_logo" transform="translate(13.000000, 0.000000)">
+                    <path d="M46.6363636,84 C44.7809182,84 45.0962045,83.2892274 44.4562773,81.4968737 L39,63.2786463 L81,38" id="Shape" fill="#C8DAEA"></path>
+                    <path d="M47,84 C48.3636364,84 48.9661364,83.3272971 49.7272727,82.5290753 L57,74.9008597 L47.9281818,69" id="Shape" fill="#A9C9DD"></path>
+                    <path d="M47.68059,69.3166816 L71.0280967,86.2916922 C73.6923485,87.7383381 75.6152348,86.9893357 76.2788718,83.857494 L85.7825043,39.7853703 C86.7555102,35.9464304 84.2954767,34.2052673 81.7467072,35.3439979 L25.9415315,56.519883 C22.1323057,58.0234463 22.1545138,60.1148091 25.2471894,61.0466791 L39.5680557,65.4453396 L72.7223841,44.8614348 C74.2875264,43.9274268 75.7240064,44.4295695 74.544996,45.4593064" id="Shape" fill="url(#linearGradient-1)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

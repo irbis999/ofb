@@ -1,0 +1,29 @@
+.bg-component
+  background rgba(color-gold, .7)
+  .ct-bg-inner
+    position relative
+    left 10px
+    top -(@left)
+    margin-right -2px
+    padding 1.7em 1.4em 3.3em 1.4em
+    background white
+    @extend .clearfix
+    .button-component
+      position absolute
+      margin-top 1.5em
+  @media (min-width medium-up)
+    background-image image-url('main/pattern-bg.png')
+    background-size 88px 88px
+    background-position right bottom
+    position relative
+    &.__small-pad
+      .ct-bg-inner
+        padding-right 1em
+    .ct-bg-inner
+      padding 3em 3.8em
+      left 22px
+      top -(@left)
+      .button-component
+        margin-top .7em
+        &.__small
+          margin-top 1.3em

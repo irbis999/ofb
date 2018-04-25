@@ -1,0 +1,166 @@
+section.news
+  background color-light-grey
+  padding 3em 0 2em 0
+  .exchange-col
+    padding 0 10px
+    margin-bottom 2.5em
+    .large-black
+      margin-bottom .7em
+      display inline-block
+    .form
+      .row
+        @extend .clearfix
+        margin-bottom 1em
+        input.text
+          float left
+          width calc(100% - 5em)
+          height 2em
+          box-sizing border-box
+          max-width none
+          margin 0
+        .dropdown
+          float right
+          font-size 1.13em
+          margin 0
+          border-bottom 1.5px solid color-blue
+          font-weight bold
+          text-align right
+          width 4em
+          height 2em
+          box-sizing border-box
+          position relative
+          padding-right 1.2em
+          color color-blue
+          &::after
+            content ''
+            position absolute
+            right 0
+            top .4em
+            width 12px
+            height 6px
+            background image-url('svg-sprite/caret-down.svg') no-repeat center center
+            background-size contain
+  .news-col
+    padding 0 10px
+    margin-bottom 3.5em
+    .large-black
+      margin-bottom .7em
+      display inline-block
+    .items
+      margin-right -(container-padding + 10px)
+      margin-left -(container-padding + 10px)
+      padding-left (container-padding + 10px)
+      overflow auto
+      padding-bottom 1em
+      &-inner
+        width 960px
+        .item
+          width 223px
+          margin-right 1em
+          float left
+          .time
+            font-size .86em
+            color rgba(black, .5)
+            margin-bottom .5em
+          a
+            font-weight bold
+            font-size 1.13em
+            border-bottom 1px solid color-xlight-blue
+  footer
+    padding 0 10px
+    color color-grey
+    font-size .86em
+    .copy
+      margin-bottom 1.3em
+    .credentials
+      .logo
+        display block
+        width 111px
+        height 35px
+        background image-url('svg-sprite/art-lebedev-logo.svg') no-repeat top center
+        background-size contain
+        margin-bottom 1em
+      &-text
+        a
+          color inherit
+          border-bottom 1px solid color-xlight-grey
+  @media (min-width medium-up)
+    .exchange-col
+      float right
+      width 37%
+      padding 0 10px 0 0
+      box-sizing border-box
+      .large-black
+        font-size 2em
+      .form
+        margin 0 60px 4.5em 0
+        .row
+          .dropdown, input.text
+            font-size 2em
+            height 1.7em
+          .dropdown
+            width 2.5em
+            padding-top .05em
+            padding-right .7em
+            &::after
+              top .6em
+          input.text
+            width calc(100% - 3em)
+      .app
+        width 188px
+        height 54px
+        display inline-block
+        &.__appstore
+          margin-right .5em
+          background image-url('main/appstore.png')
+          background-size contain
+        &.__google-play
+          background image-url('main/google-play.png')
+          background-size contain
+    .news-col
+      float left
+      width 59%
+      padding 0
+      .large-black
+        font-size 2em
+        margin-bottom 1.1em
+      .items
+        margin-right 0
+        margin-left 0
+        padding-left 0
+        &-inner
+          width auto
+          .item
+            width 50%
+            box-sizing border-box
+            margin 0 0 2em 0
+            padding-right 3.5em
+
+            &:nth-of-type(odd)
+              clear left
+            .time
+              font-size 1em
+            a
+              font-size 1.27em
+    footer
+      clear both
+      border-top 1px solid rgb(221,221,221)
+      padding 2em 0 1em 0
+      @extend .clearfix
+      .copy
+        font-size 1rem
+        float left
+      .credentials
+        width 37%
+        float right
+        padding-top .2em
+        @extend .clearfix
+        .logo
+          width 100px
+          height 45px
+          background image-url('svg-sprite/art-lebedev-logo2.svg') no-repeat top center
+          background-size contain
+          float left
+          margin-top 2px
+        &-text
+          margin-left 112px

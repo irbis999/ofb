@@ -1,0 +1,36 @@
+section.i-want
+  margin-bottom 2em
+  .col
+    background top center no-repeat image-url('plugs/malibu-mobile.jpg')
+    background-size 100%
+    padding-top 120px
+    margin-bottom 3em
+  @media (min-width medium-up)
+    .site-container
+      max-width 1360px
+      background image-url('plugs/malibu.jpg') -50px 0 no-repeat
+      background-size 1410px
+      transition background-position 2s
+    .col
+      box-sizing border-box
+      padding-top 250px
+      background image-url('main/i-want-wave.svg') no-repeat 50% 500px
+      background-size 1440px
+      .content
+        transform translateX(40px)
+        transition transform 2s
+        .button-component
+          transform translateX(40px)
+          transition transform 2s
+      .bg-component
+        width 460px
+        float right
+        margin-right 130px
+    &.animated
+      .site-container
+        background-position 0 0
+      .col
+        .content
+          transform translateX(0)
+          .button-component
+            transform translateX(0)

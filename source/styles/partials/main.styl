@@ -1,20 +1,20 @@
 html
-  font-family font-family-main
-body
   font-size font-size-main
+body
+  font-family font-family-main
   color font-color-main
   line-height line-height-main
-  //background image-url('svg-sprite/сamera.svg')
+  min-width site-container-min-width
+  max-width site-container-max-width
+  margin 0 auto
 .site-container
   margin 0 auto
-  max-width body-max-width
-  min-width body-min-width
+  max-width site-container-max-width
+  min-width site-container-min-width
   @extend .clearfix
 a
-  color font-link-color
+  color link-color
   text-decoration none
-  &:hover
-    text-decoration underline
   &.__styleless
     color inherit
 img, iframe, object, embed, video
@@ -28,3 +28,14 @@ img, iframe, object, embed, video
 .anti-container
   margin-left -(container-padding)
   margin-right @margin-left
+
+@media (min-width: medium-up)
+  body
+    min-width site-container-mup-width
+    max-width none
+  .site-container
+    min-width site-container-mup-width
+    max-width @min-width
+  .container
+    padding-left 0
+    padding-right 0

@@ -1,0 +1,61 @@
+section.app
+  background image-url('main/pattern-bg.png') right bottom / 88px 88px fixed, image-url('main/app-mobile-bg.svg') no-repeat 0 0 / 100%
+  padding 70px 0 3em 0
+  margin-bottom 2em
+  .left-col
+    width 80px
+    height @width
+    margin 0 0 1.5em 25px
+    background  image-url('main/logo-rect.png') 0 0
+    background-size cover
+  .right-col
+    padding 0 25px
+    color white
+    p
+      font-size 1.4em
+    a
+      width 188px
+      height 54px
+      display inline-block
+      background no-repeat 0 0
+      background-size 188px 54px
+      &.__appstore
+        background-image image-url('main/appstore.png')
+      &.__google-play
+        display none
+  @media (min-width medium-up)
+    background image-url('main/pattern-bg.png') right bottom / 88px 88px fixed, image-url('main/app-bg.svg') no-repeat top center / 1440px
+    padding-top 0
+    .left-col
+      float left
+      width 339px
+      height 531px
+      position relative
+      top -17px
+      background image-url('main/phone.png') no-repeat 0 70px
+      transition background-position 2s
+    .right-col
+      float left
+      width 515px
+      padding 130px 0 0 0
+      //margin-left 180px
+      margin-left 110px
+      transform translateX(70px)
+      opacity 0
+      transition transform 2s, opacity 2s
+      p
+        font-size 2.67em
+        line-height 1.13
+        margin-bottom .8em
+      a
+        margin-right 1em
+        &.__google-play
+          display inline-block
+          background-image image-url('main/google-play.png')
+    &.animated
+      .left-col
+        background-position 0 0
+      .right-col
+        //margin-left 110px
+        transform translateX(0)
+        opacity 1

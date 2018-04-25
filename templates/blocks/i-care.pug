@@ -1,0 +1,41 @@
+section.i-care
+	.tabs-component
+		.ct-tc-tabs(style='width: 25em')
+			span Я забочусь
+			a.__active(href='#') об оплате счетов
+			a.__last(href='#') о своих близких
+	.site-container
+		.left-col
+			.inner
+				.large-black Пополнение мобильного
+				.small-grey Номер телефона
+				form
+					input.text(value=998)
+					button.button-component К пополнению
+				.large-black Оплата услуг
+				.cols
+					.col: a(href='#') интернет
+					.col: a(href='#') газ
+					.col: a(href='#') телевидение
+					.col: a(href='#') вода
+					.col: a(href='#') свет
+					.col: a(href='#') тепло
+				a.more(href='#') Еще 23 услуги
+		.right-col
+			.container
+				.bg-component
+					.ct-bg-inner
+						.large-blue
+							span Экономия на налогах
+							br
+							span с
+							= ' '
+							a.border-bottom(href='#') «коммунальным» вкладом
+						.small-grey Сумма вклада
+						.medium-black 5 млн сум
+						.range-component
+							.ct-rc-thumb-container
+								.ct-rc-thumb
+						.small-grey Ежемесячный доход. Он будет автоматически перечисляться на оплату вашей коммуналки
+						.medium-black 41 667 сум
+						a.button-component.__small(href='#') Оформить вклад

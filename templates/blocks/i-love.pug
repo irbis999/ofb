@@ -1,0 +1,10 @@
+section.i-love.wow
+	.tabs-component
+		.ct-tc-tabs(style='width: 32em')
+			span Я люблю
+			a.__active(data-target='section.i-love .tab-content.__1') путешествовать
+			a(data-target='section.i-love .tab-content.__2') зарабатывать
+			a.__last делать попупки
+	.site-container.relative
+		include i-love/tab-1
+		include i-love/tab-2

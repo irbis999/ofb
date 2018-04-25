@@ -1,0 +1,23 @@
+.range-component
+  .ct-rc-thumb-container
+    border-bottom 2px solid color-blue
+    margin .5em 1em 1em 0
+    position relative
+    max-width 300px
+  .ct-rc-thumb
+    width 16px
+    height @width
+    border-radius 50%
+    background color-blue
+    position absolute
+    left 50%
+    top -7px
+    cursor pointer
+  &.__transition
+    .ct-rc-thumb
+      transition left .5s
+  @media (min-width medium-up)
+    .ct-rc-thumb-container
+      margin-top .2em
+      max-width 220px
+      margin-bottom 2.5em

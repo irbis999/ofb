@@ -1,14 +1,22 @@
 include templates/mixins/svg
 
 doctype html
-html(lang="en")
+html(lang="ru")
 	head
-		title Bank
+		title OFB
 		meta(charset='utf-8')
 		meta(name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0')
-		link(rel='stylesheet' href='/build/styles/app.css')
-	body(data-sprite-path='/build/styles/svg-sprite.svg')
-		svg: +use('сamera')
-		h1 Pug - node template engine
-		img(src='/build/img/svg-sprite/сamera.svg')
-		script(src='/build/js/app.js')
+		link(rel='stylesheet' href='build/styles/app-7c402cb83a.css')
+		script(src='build/js/app-82d8760f6e58be0bf2e4.js')
+	body(data-sprite-path='build/styles/svg-sprite-cf5f5f9899.svg',
+	data-mup='1180')
+		include templates/layout/header
+		include templates/layout/nav
+		include templates/blocks/card
+		include templates/blocks/i-love
+		include templates/blocks/story
+		include templates/blocks/i-want
+		include templates/blocks/app
+		include templates/blocks/i-care
+		include templates/blocks/questions
+		include templates/blocks/news

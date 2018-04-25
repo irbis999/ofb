@@ -1,0 +1,70 @@
+.tab-content.__1.__active
+	.left-col
+		video.media.__active(autoplay, loop, muted, playsinline,
+		data-src='build/img/videos/tai.mp4',
+		poster='build/img/videos/tai.jpg',
+		data-value='tai',
+		hidden
+		style='background-image: url(build/img/videos/tai.jpg)')
+		video.media(autoplay, loop, muted, playsinline,
+		data-src='build/img/videos/goa.mp4',
+		poster='build/img/videos/goa.jpg',
+		data-value='goa',
+		hidden
+		style='background-image: url(build/img/videos/goa.jpg)')
+		video.media(autoplay, loop, muted, playsinline,
+		data-src='build/img/videos/ams.mp4',
+		poster='build/img/videos/ams.jpg',
+		data-value='ams',
+		hidden
+		style='background-image: url(build/img/videos/ams.jpg)')
+		img.media.__active(src='build/img/videos/tai-mobile.jpg',
+		data-value='tai')
+		img.media(src='build/img/videos/goa-mobile.jpg',
+		data-value='goa')
+		img.media(src='build/img/videos/ams-mobile.jpg',
+		data-value='ams')
+		.container
+			.bg-component
+				.ct-bg-inner
+					.content
+						.large-blue.overflow-hidden
+							a.border-bottom(href='#') Кредит на отпуск,
+							= ' '
+							span например,&nbsp;
+							span.refresh-component.__no-init(style='padding-right: 6.5em;')
+								span.refresh.__active(data-value='tai') в Тайланд
+								span.refresh(data-value='goa') на Гоа
+								span.refresh(data-value='ams') в Амстердам
+						.small-grey Нижняя сумма
+						.range-component.__no-init(data-min='2.0', data-max='6.0')
+							.medium-black
+								span.ct-rc-text 4.0
+								= ' '
+								span млн сум
+							.ct-rc-thumb-container
+								.ct-rc-thumb
+						.small-grey Ежемесячный платеж на 1 год
+						.medium-black.payment-component.__no-init
+							.ct-pc-elem.__active(data-value='tai') 540 000 сум
+							.ct-pc-elem(data-value='goa') 420 000 сум
+							.ct-pc-elem(data-value='ams') 350 000 сум
+							span &nbsp;
+						a.button-component.__small(href='#') Оформить кредит
+	.right-col
+		.container
+			.inner
+				.card
+				.large-blue
+					a(href='#').border-bottom Международная карта
+					= ' '
+					.mup-visible.__block
+					span для путешествий
+				.cols
+					.col
+						.small-grey Платежные системы
+						.medium-black Visa, UnionPay, MasterCard
+					.col
+						.small-grey Выпуск и обслуживание
+						.medium-black бесплатно
+				a.button-component.__small(href='#') Заказать карту

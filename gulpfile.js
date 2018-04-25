@@ -23,7 +23,15 @@ gulp.task("styles", function () {
 	let processors = [autoprefixer]
 
 	if (!isDevelopment) {
-		processors.push(cssnano)
+		processors.push(cssnano({
+			zindex: false,
+			reduceIdents: {
+				keyframes: false
+			},
+			discardUnused: {
+				keyframes: false
+			}
+		}))
 	}
 
 	return combiner(gulp.src("source/styles/app.styl"),

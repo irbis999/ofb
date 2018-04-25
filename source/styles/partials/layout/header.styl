@@ -1,2 +1,54 @@
 header.main
-  color red
+  display none
+  @media (min-width medium-up)
+    animation appear 1s
+    display block
+    height 43px
+    border-bottom 1px solid rgba(color-blue, .1)
+    margin-bottom 1.6em
+    @extend .clearfix
+    .elem
+      float left
+      height 100%
+      box-sizing border-box
+      padding .8em 0
+      color color-light-blue
+      margin-left 1.3em
+      @extend .clearfix
+      &.__active
+        color color-gold
+        border-bottom 2px solid color-gold
+        position relative
+        top 1px
+        span
+          position relative
+          top -1px
+      span
+        float left
+      svg
+        float left
+        margin-right .5em
+        &.__search
+          width 17px
+          height @width
+          margin-top .1em
+          margin-left .2em
+        &.__user
+          width 19px
+          height 20px
+        &.__comment
+          width 15px
+          height 16px
+          margin-top .15em
+        &.__location
+          width 15px
+          height 20px
+          //margin-top .15em
+      &.__right
+        float right
+        border-left 1px solid rgba(color-blue, .1)
+        padding-left 1.2em
+        padding-right @padding-left
+        margin-left 0
+
+

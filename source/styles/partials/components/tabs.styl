@@ -1,0 +1,31 @@
+.tabs-component
+  padding-left 1.3em
+  overflow auto
+  margin-bottom .5em
+  .ct-tc-tabs
+    @extend .clearfix
+    font-size 1.13em
+    font-weight bold
+    padding-bottom 1.5em
+    span, a
+      float left
+      margin-right 1.1em
+      &.__last
+        margin-right 0
+    span
+      color color-gold
+    a
+      cursor pointer
+      color color-light-blue
+      &.__active
+        color color-gold
+        border-bottom 2px solid color-gold
+  @media (min-width medium-up)
+    padding-left 0
+    .ct-tc-tabs
+      width auto !important
+      text-align center
+      font-size 1.67em
+      span, a
+        float none
+        margin 0 .7em

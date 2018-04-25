@@ -1,0 +1,129 @@
+animateBgComponent()
+  .bg-component
+    transform  translateX(-40px)
+    transition transform 2s
+    .content
+      transform translateX(40px)
+      transition transform 2s
+disAnimateBgComponent()
+  .left-col
+    .bg-component
+      transform  translateX(0)
+      .content
+        transform  translateX(0)
+
+section.i-love
+  margin-bottom 2em
+  .tab-content
+    display none
+    &.__active
+      display block
+  .left-col
+    padding-top 120px
+    margin-bottom 3em
+    position relative
+    .media
+      position absolute
+      top 0
+      left 0
+      width 100%
+      z-index -100
+      background-repeat no-repeat
+      transition opacity .3s ease-in
+      opacity 0
+      &.__active
+        opacity 1
+    video.media
+      display none
+  .right-col
+    .inner
+      background color-light-grey
+      padding 2em
+      .card
+        width 184px
+        height 120px
+        background image-url('main/card-big.png') no-repeat
+        background-size 184px 120px
+        margin-bottom 2em
+        box-shadow -10px 20px 30px rgba(black, .07)
+        border-radius 10px
+      .cols
+        .col
+          margin-bottom 1em
+          &:last-of-type
+            margin-bottom 1.5em
+  @media (min-width medium-up)
+    //Фиксируем высоту для красивого переключения табов
+    height 750px
+    @extend .clearfix
+    .tab-content
+      position absolute
+      left 0
+      top 0
+      width 100%
+      box-sizing border-box
+      opacity 0
+      z-index 1
+      transition opacity 1s, transform 1s
+      display block
+      //Анимация при переключении табов
+      //тут несколько сложно, т.к. есть пересечение с первоначальной анимацией
+      &.__1
+        transform translateX(-40px)
+        &:not(.__active)
+          .left-col
+            animateBgComponent()
+      &.__2
+        transform translateX(40px)
+        .left-col
+          padding-top 150px
+          animateBgComponent()
+        &.__active
+          disAnimateBgComponent()
+      &.__active
+        opacity 1
+        z-index 2
+        transform translateX(0)
+      //У уходящего слайда анимация начинается с задержкой
+      &.__delayed
+        transition-delay .5s
+    .left-col
+      float left
+      width 48%
+      padding-left 2em
+      padding-right calc(2em + 22px)
+      box-sizing border-box
+      padding-top 260px
+      background image-url('main/i-love-wave.svg') no-repeat 50% 377px
+      background-size 535px
+      video.media
+        display block
+      img.media
+        display none
+        &.visible
+          display block
+      animateBgComponent()
+    //Анимация при первом появлении
+    &.animated
+      disAnimateBgComponent()
+    .right-col
+      float right
+      width 48%
+      .inner
+        padding 3.3em
+        .card
+          width 245px
+          height 160px
+          background-size 245px 160px
+          box-shadow -10px 20px 40px rgba(black, .15)
+          margin-bottom 2.7em
+        .cols
+          @extend .clearfix
+          .col
+            float left
+            width 50%
+            box-sizing border-box
+            padding-right 1em
+            margin-bottom 2.5em
+            .medium-black
+              font-size 1.27em

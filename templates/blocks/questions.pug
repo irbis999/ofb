@@ -1,0 +1,41 @@
+section.questions
+	.site-container
+		.container
+			.title
+				span У меня есть
+				= ' '
+				a.question.small-visible(href='#') вопрос
+				span.mup-visible вопрос
+				a.mup-visible.more(href='#') Еще 65 вопросов
+			.items
+				.items-inner
+					.item
+						a(href='#') Что делать, если нет денег платить кредит
+						small Помогло 1430 людям
+					.item
+						a(href='#') Как повысить кредитный лимит
+						small Помогло 1305 людям
+					.item
+						a(href='#') Как не переплатить по кредиту
+						small Помогло 1457 людям
+			.telegram
+				svg.icon: +use('telegram')
+				.telegram-title
+					span Удобный и полезный телеграм-бот
+					= ' '
+					a(href='#') @ofb_bot
+				p Расскажет о продуктах, подскажет ближайшее отделение банка и покажет текущий курс валют
+			.contacts
+				span.small-visible.social-title Мы в соцсетях
+				span.mup-visible Если остались вопросы, пишите нам в соцсетях
+				a.social-link.__first(href='#'): svg: +use('fb')
+				a.social-link(href='#'): svg: +use('vk')
+				a.social-link.__last(href='#'): svg: +use('ok')
+				span.mup-visible ,
+				br.mup-visible
+				span.mup-visible звоните на номер
+				span.phone (99 871) 200-88-99
+				span.mup-visible или обратитесь
+				a.chat(href='#')
+					span.small-visible Онлайн-приемная
+					span.mup-visible в онлайн-приемную

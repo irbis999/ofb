@@ -27,9 +27,8 @@ module.exports = {
 		publicPath: '/build/js/'
 	},
 	resolve: {
-		extensions: ['.js', '.vue', '.json'],
+		extensions: ['.js', '.json'],
 		alias: {
-			'vue$': 'vue/dist/vue.esm.js',
 			'@': resolve(),
 		}
 	},
@@ -38,10 +37,6 @@ module.exports = {
 			test: /\.js$/,
 			include: [__dirname + '/source/js'],
 			loader: "babel-loader",
-		}, {
-			test: /\.vue$/,
-			include: [__dirname + '/source/js'],
-			loader: 'vue-loader',
 		},],
 	},
 	plugins: [
@@ -57,7 +52,6 @@ module.exports = {
 		}),
 		new webpack.ProvidePlugin({
 			axios: 'axios',
-			_get: 'lodash.get',
 			$: 'jquery',
 			jQuery: 'jquery'
 		}),

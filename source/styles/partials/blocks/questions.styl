@@ -1,0 +1,185 @@
+section.questions
+  margin-bottom 2em
+  .title
+    font-weight bold
+    font-size 1.67em
+    margin 0 0 .5em .4em
+    a
+      border-bottom 1px solid color-xlight-blue
+  .items
+    overflow auto
+    margin-right -(container-padding)
+    margin-bottom .5em
+    margin-left -(container-padding)
+    padding-left container-padding
+    &-inner
+      width 812px
+      padding-bottom 1em
+      @extend .clearfix
+      .item
+        width 260px
+        height 160px
+        box-sizing border-box
+        background color-light-grey
+        padding 2em
+        float left
+        margin-right .6em
+        overflow hidden
+        &:last-of-type
+          margin-right 0
+        a
+          border-bottom 1px solid color-xlight-blue
+          font-weight bold
+          font-size 1.4em
+          line-height 1.29
+          margin-bottom .4em
+        small
+          margin .8em 0 0 0
+          display block
+          font-size .8em
+          color color-grey
+  .telegram
+    background #179CDD image-url('main/pattern-bg.png')
+    background-size 88px 88px
+    color white
+    padding 2em 2em 1.5em 2em
+    margin-bottom 1.5em
+    .icon
+      width 63px
+      height 57px
+      margin 0 0 .8em 3px
+    &-title
+      font-size 1.4em
+      margin-bottom 1em
+      a
+        color white
+        border-bottom 1px solid rgba(white, .5)
+        padding-bottom .2em
+    p
+      font-size 1.13em
+  .contacts
+    padding 0 7px
+    .social-title
+      color color-grey
+      font-size 1.17em
+    .social-link
+      float right
+      margin -.2em 0 .8em 1.1em
+      svg
+        width 29px
+        height 30px
+    .phone, .chat
+      clear both
+      display block
+      border-top 1px solid rgba(black, .1)
+      font-size 1.17em
+      color color-blue
+      padding .7em 0 .7em 2.3em
+      position relative
+    .phone
+      &::before
+        content ''
+        width 19px
+        height @width
+        position absolute
+        left .4em
+        top .8em
+        background image-url('svg-sprite/phone.svg') no-repeat center center
+        background-size contain
+    .chat
+      &::before
+        content ''
+        width 17px
+        height 18px
+        position absolute
+        left .4em
+        top .95em
+        background image-url('svg-sprite/comment-blue.svg') no-repeat center center
+        background-size contain
+  @media (min-width medium-up)
+    margin-bottom 8em
+    .title
+      padding-left 3.1em
+      text-align center
+      font-size 2.67em
+      margin-bottom 1em
+      @extend .clearfix
+      .more
+        float right
+        font-size 1rem
+        color color-grey
+        position relative
+        border-bottom-color color-xlight-grey
+        margin .9em 1em 0 0
+        &::after
+          display inline-block
+          content ''
+          width 9px
+          height 14px
+          position absolute
+          margin .3em 0 0 .5em
+          background image-url('svg-sprite/caret-right.svg') no-repeat center center
+          background-size contain
+    .items
+      margin-bottom 1.2em
+      &-inner
+        width auto
+        margin-right 0
+        @extend .clearfix
+      .item
+        width 31.3%
+        margin-right 2.5%
+        float left
+        padding 2.4em 3.33em
+        text-align center
+        height 200px
+        a
+          font-size 1.67em
+        small
+          font-size 1em
+    .telegram
+      padding 60px 230px 3em 0
+      .icon
+        float left
+        width 150px
+        height 130px
+        margin-left 50px
+      &-title
+        margin 0 0 .7em 280px
+        font-size 2.67em
+        line-height 1.13
+        a
+          padding-bottom 0
+          border-bottom-width 1.5px
+      p
+        margin-left 280px
+        font-size 1.27em
+    .contacts
+      text-align center
+      padding 0
+      width 925px
+      margin 0 auto
+      font-size 1.67em
+      color color-grey
+      .social-link
+        float none
+        margin 0 .2em
+        position relative
+        top .25em
+        &.__first
+          margin-left .6em
+        svg
+          width 33px
+          height 34px
+      .phone, .chat
+        clear none
+        display inline
+        border-top none
+        font-size 1em
+        color black
+        padding 0
+        margin 0 .4em
+        &::before
+          display none
+      .chat
+        border-bottom 1px solid color-xlight-grey

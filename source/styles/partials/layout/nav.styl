@@ -1,0 +1,43 @@
+nav.main
+  padding 12px 0 7px 0
+  .logo
+    float left
+    height 34px
+    width 91px
+    background center center image-url('svg-sprite/logo-mobile.svg') no-repeat
+    background-size cover
+    margin 0 0 .5em .3em
+  .trigger
+    float right
+    width 24px
+    height @width
+    background center center image-url('main/menu.png') no-repeat
+    background-size 100%
+    margin .3em .6em 0 0
+  .menu
+    display none
+    clear both
+    margin 0 0 0 .4em
+    a
+      display block
+      font-size 1.27em
+      color color-blue
+      padding .4em 0
+  @media (min-width medium-up)
+    animation appear 2s
+    margin-bottom 1em
+    .logo
+      width 286px
+      height 39px
+      background-image image-url('main/logo.jpg')
+    .trigger
+      display none
+    .menu
+      display block !important
+      clear none
+      float right
+      margin .45em 0 0 0
+      a
+        display inline-block
+        padding 0
+        margin-left 1.5em
